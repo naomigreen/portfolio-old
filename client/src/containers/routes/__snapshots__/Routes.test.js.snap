@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Routes component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-fzozJi MaVph"
+  >
+    <h2
+      class="sc-fzplWN bvrXk"
+    >
+      Codes Green Ltd
+    </h2>
+    <div
+      class="sc-fzoLsD kSxwM"
+    >
+      <a
+        aria-current="page"
+        class="sc-fzpans eZdZpG active-link"
+        href="/home"
+      >
+        Home
+      </a>
+      <a
+        class="sc-fzpans eZdZpG"
+        href="/work"
+      >
+        Work
+      </a>
+      <a
+        class="sc-fzpans eZdZpG"
+        href="/demo"
+      >
+        Demo
+      </a>
+      <a
+        class="sc-fzpans eZdZpG"
+        href="/contact"
+      >
+        Contact
+      </a>
+    </div>
+    <div
+      class="sc-Axmtr bdnFdE"
+    >
+      <img
+        alt=""
+        class="sc-AxjAm qXnYG"
+        data-testid="img-test-id"
+        src="https://naomi-assets.s3.eu-west-2.amazonaws.com/me.jpg"
+      />
+      <div>
+        <p
+          style="color:#fff"
+        >
+          
+I’m Naomi Prescod-Green, a Full Stack JavaScript Contractor and founder of Codes Green Ltd. 
+          <br />
+           
+I have a Computer Science background and specialise in React, Vanilla and Node JavaScript. 
+          <br />
+           
+I enjoy working on complex projects that test my skills and teach me new approaches to software development.
+
+        </p>
+      </div>
+    </div>
+    <footer
+      class="sc-AxheI gYZXTo"
+    >
+      <p
+        class="copyright"
+      >
+        © Codes Green Ltd 
+      </p>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
