@@ -36,7 +36,7 @@ const Text = styled(ReactMarkdown)`
   padding: 20px;
   width: 700px;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 95%;
   border-bottom: ${props => props.noBorder ? 0 : '1px solid #fff'};
 
   li{
