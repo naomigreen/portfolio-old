@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from "react";
+import styled from 'styled-components';
 import useWindowSize from "@rehooks/window-size";
-import "./styles.css";
 import * as d3 from "d3";
 
 export default function Bubble({ bubbleData }) {
@@ -58,10 +58,10 @@ export default function Bubble({ bubbleData }) {
       const title = g
         .append("text")
         .attr("text-anchor", "middle")
-        .attr("y", -60)
+        .attr("y", - 60)
         .attr("x", width / 2 - 20)
         .attr("class", "bubble-title")
-      title.text("Life Expectancy vs GDP Bubble Chart")
+      title.text("Life Expectancy vs GDP")
 
       const xLabel = g
         .append("text")
@@ -75,8 +75,8 @@ export default function Bubble({ bubbleData }) {
       const yLabel = g
         .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", -40)
-        .attr("x", -170)
+        .attr("y", - 40)
+        .attr("x", - 170)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
         .attr("fill", "#fff");
@@ -128,7 +128,7 @@ export default function Bubble({ bubbleData }) {
           .append("text")
           .attr("font-size", "14px")
           .attr("y", 9.5)
-          .attr("x", -5)
+          .attr("x", - 5)
           .attr("text-anchor", "end")
           .style("text-transform", "capitalize")
           .attr("fill", "#fff")
@@ -238,9 +238,63 @@ export default function Bubble({ bubbleData }) {
     }
   }, [bubbleData, getWidth]);
   return (
-    <div className='bubble-chart'>
+    <BubbleChart>
       <div id='bubble' width={elementWidth.toFixed().toString()} height='550' />
-    </div>
+    </BubbleChart>
   );
 }
 
+const BubbleChart = styled.div`
+  margin: 50px auto;
+
+.bubble-svg{
+  display: block;
+  margin: 0 auto;
+}
+
+.toolTip {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px;
+  color: #fff;
+  pointer-events: none;
+  position: absolute;
+  width: 350px;
+  text-transform: capitalize;
+}
+
+.toolTip td {
+  text-align: right;
+  padding-left: 10px;
+}
+
+.toolTip th {
+  text-align: left;
+}
+
+.bubble-title{
+  font-size: 24px;
+  fill: #fff;
+}
+
+@media (max-width: 1366px) {
+  .toolTip {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .bubble-svg {
+    margin: 0 10px;
+  }
+
+  .bubble-title {
+    font-size: 19px;
+    background: red;
+    width: 100%;
+    display: block;
+    border: 1px solid #fff;
+    position: absolute;
+  }
+}
+`;
