@@ -156,7 +156,7 @@ templates. This was a great role as it gave me a fundamental understanding of va
 without frameworks.`;
 
 export const demo = `Unfortunately most of the projects I work on have non-disclosure agreements, 
-therefore I've decided to demonstrate my passion for data visualisation using D3.`
+therefore I've decided to demonstrate my passion for data visualisation using D3.`;
 export const barInfo = `I was inspired to create this race chart after seeing a version just showing
  the cases in an article on the [BBC](https://www.bbc.co.uk/news/world-51235105)`;
 
