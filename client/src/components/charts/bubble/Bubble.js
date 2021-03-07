@@ -17,7 +17,7 @@ export default function Bubble() {
 				return 700;
 			}
 		},
-		[ windowSize ]
+		[windowSize]
 	);
 
 	const elementWidth = getWidth() + 100;
@@ -39,9 +39,9 @@ export default function Bubble() {
 				let time = 0;
 
 				const toolTip = d3.select('#bubble').append('div').attr('class', 'toolTip').style('opacity', 0);
-				const x = d3.scaleLog().base(10).range([ 0, width ]).domain([ 142, 150000 ]);
-				const y = d3.scaleLinear().range([ height, 0 ]).domain([ 0, 90 ]);
-				const area = d3.scaleLinear().range([ 25 * Math.PI, 1500 * Math.PI ]).domain([ 2000, 1400000000 ]);
+				const x = d3.scaleLog().base(10).range([0, width]).domain([142, 150000]);
+				const y = d3.scaleLinear().range([height, 0]).domain([0, 90]);
+				const area = d3.scaleLinear().range([25 * Math.PI, 1500 * Math.PI]).domain([2000, 1400000000]);
 				const continentColor = d3.scaleOrdinal(d3.schemeDark2);
 
 				const title = g
@@ -81,7 +81,7 @@ export default function Bubble() {
 					.attr('fill', '#fff')
 					.text('1965');
 
-				const xAxisCall = d3.axisBottom(x).tickValues([ 400, 4000, 40000 ]).tickFormat(d3.format('$'));
+				const xAxisCall = d3.axisBottom(x).tickValues([400, 4000, 40000]).tickFormat(d3.format('$'));
 				g.append('g').attr('class', 'x axis').attr('transform', 'translate(0,' + height + ')').call(xAxisCall);
 
 				const yAxisCall = d3.axisLeft(y).tickFormat((d) => {
@@ -89,7 +89,7 @@ export default function Bubble() {
 				});
 				g.append('g').attr('class', 'y axis').call(yAxisCall);
 
-				const continents = [ 'africa', 'americas', 'asia', 'europe' ];
+				const continents = ['africa', 'americas', 'asia', 'europe'];
 				const legend = g.append('g').attr('transform', `translate(${width - 10}, ${height - 125})`);
 
 				continents.forEach((continent, i) => {
@@ -203,7 +203,7 @@ export default function Bubble() {
 				drawChart();
 			}
 		},
-		[ bubbleData, getWidth ]
+		[bubbleData, getWidth]
 	);
 	return (
 		<BubbleChart>

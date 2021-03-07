@@ -5,8 +5,8 @@ import * as d3 from 'd3';
 import { DataContext } from '../../utils/hooks';
 
 export default function Bar() {
-	const barData = useContext(DataContext);
 
+	const barData = useContext(DataContext);
 	const windowSize = useWindowSize().innerWidth;
 
 	const getWidth = useCallback(
@@ -17,7 +17,7 @@ export default function Bar() {
 				return 700;
 			}
 		},
-		[ windowSize ]
+		[windowSize]
 	);
 
 	const elementWidth = getWidth() + 100;
@@ -47,9 +47,9 @@ export default function Bar() {
 					.append('g')
 					.attr('transform', `translate(${margin.left},${margin.top})`);
 
-				const x = d3.scaleTime().domain([ 1995, 2017 ]).range([ 0, width ]);
+				const x = d3.scaleTime().domain([1995, 2017]).range([0, width]);
 
-				const y = d3.scaleBand().range([ 50, height ]).padding(0.2);
+				const y = d3.scaleBand().range([50, height]).padding(0.2);
 
 				const yAxis = d3.axisLeft(y);
 				g.append('g').attr('class', 'y axis').call(yAxis);
@@ -77,7 +77,7 @@ export default function Bar() {
 				update(data[1995]);
 
 				function update(data) {
-					const clear = [ ...new Map(data.map((obj) => [ `${obj.Code}:${obj.Area}`, obj ])).values() ];
+					const clear = [...new Map(data.map((obj) => [`${obj.Code}:${obj.Area}`, obj])).values()];
 					const topResults = clear
 						.sort((a, b) => {
 							return parseInt(b.Value) - parseInt(a.Value);
@@ -92,7 +92,7 @@ export default function Bar() {
 
 					barLabel.exit().attr('class', 'exit barLabel').remove();
 
-					x.domain([ 0, d3.max(topResults, (d) => parseInt(d.Value)) ]);
+					x.domain([0, d3.max(topResults, (d) => parseInt(d.Value))]);
 					y.domain(topResults.map((d) => d.Area));
 
 					bar
@@ -116,7 +116,7 @@ export default function Bar() {
 						.attr('x', (d) => x(parseInt(d.Value)) + 10)
 						.attr('whiteSpace', 'nowrap')
 						.attr('height', (d) => y.bandwidth())
-						.text((d) => d.Value.toLocaleString())
+						.text((d) => `£${d.Value.toLocaleString()}`)
 						.attr('fill', '#fff');
 
 					g.selectAll('.y.axis').call(yAxis).selectAll('.domain, .tick line').remove();
@@ -134,7 +134,7 @@ export default function Bar() {
 				drawChart();
 			}
 		},
-		[ barData, getWidth ]
+		[barData, getWidth]
 	);
 	return (
 		<BarChart>

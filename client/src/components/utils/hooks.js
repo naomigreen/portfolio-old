@@ -1,27 +1,29 @@
-import { useState, useEffect, createContext } from "react";
-import axios from "axios";
+import { useState, useEffect, createContext } from 'react';
+import axios from 'axios';
 
 export const DataContext = createContext();
 
 export const useFetch = (url, initialValue) => {
-  const [data, setData] = useState(initialValue);
-  const [errorMsg, setErrorMsg] = useState(null);
+	const [ data, setData ] = useState(initialValue);
+	const [ errorMsg, setErrorMsg ] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(url);
-      setData(result.data);
-    };
-    try {
-      fetchData();
-    } catch (e) {
-      setErrorMsg(e.message);
-    }
-  }, [url]);
-  if (errorMsg) {
-    console.log(errorMsg);
-  }
+	useEffect(
+		() => {
+			const fetchData = async () => {
+				const result = await axios(url);
+				setData(result.data);
+			};
+			try {
+				fetchData();
+			} catch (e) {
+				setErrorMsg(e.message);
+			}
+		},
+		[ url ]
+	);
+	if (errorMsg) {
+		console.log(errorMsg);
+	}
 
-  return data;
+	return data;
 };
-

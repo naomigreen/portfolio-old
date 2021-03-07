@@ -3,73 +3,71 @@
 exports[`should render Routes component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-fzozJi MaVph"
+    class="sc-fzqBZW BQyur"
   >
     <h2
-      class="sc-fzplWN bvrXk"
+      class="sc-fzoLag fiMHy"
     >
       Codes Green Ltd
     </h2>
     <div
-      class="sc-fzoLsD kSxwM"
+      class="sc-fzqNJr dbelry"
     >
       <a
         aria-current="page"
-        class="sc-fzpans eZdZpG active-link"
+        class="sc-fzoyAV dMQIdv active-link"
         href="/home"
       >
         Home
       </a>
       <a
-        class="sc-fzpans eZdZpG"
+        class="sc-fzoyAV dMQIdv"
         href="/work"
       >
         Work
       </a>
       <a
-        class="sc-fzpans eZdZpG"
+        class="sc-fzoyAV dMQIdv"
         href="/demo"
       >
         Demo
       </a>
       <a
-        class="sc-fzpans eZdZpG"
+        class="sc-fzoyAV dMQIdv"
         href="/contact"
       >
         Contact
       </a>
     </div>
     <div
-      class="sc-Axmtr bdnFdE"
+      class="sc-fznKkj bJZima"
     >
       <img
         alt=""
-        class="sc-AxjAm qXnYG"
-        data-testid="img-test-id"
+        class="sc-AxjAm fqTcMn"
+        radius="100%"
         src="https://naomi-assets.s3.eu-west-2.amazonaws.com/me.jpg"
+        width="150px"
       />
-      <div>
-        <p
-          style="color:#fff"
-        >
-          
-I’m Naomi Prescod-Green, a Full Stack JavaScript Contractor and founder of Codes Green Ltd. 
+      <div
+        class="sc-fznyAO gOGuAv"
+      >
+        <p>
+          I’m Naomi Prescod-Green, a Full Stack JavaScript Contractor and founder of Codes Green Ltd. 
           <br />
            
 I have a Computer Science background and specialise in React, Vanilla and Node JavaScript. 
           <br />
            
-I enjoy working on complex projects that test my skills and teach me new approaches to software development.
-
+I enjoy working on complex projects that test my skills and teach me new approaches to software 
+development.
         </p>
       </div>
     </div>
     <footer
-      class="sc-AxheI gYZXTo"
+      class="sc-fzplWN hYgkwo"
     >
-      <p
-        class="copyright"
-      >
+      <p>
         © Codes Green Ltd 
       </p>
     </footer>

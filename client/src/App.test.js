@@ -1,13 +1,11 @@
-import React from "react";
-import { render, cleanup } from '@testing-library/react';
+import React from 'react';
+import { render } from '@testing-library/react';
 import App from './App';
 
-afterEach(cleanup);
+describe('App tests', () => {
+	const { asFragment } = render(<App />);
 
-it("should render App component", () => {
-  const { container, asFragment } = render(<App />)
-  expect(container).toBeInTheDocument();
-  expect(container).not.toBeNull();
-  expect(asFragment()).toMatchSnapshot();
-
+	it('should render App component', () => {
+		expect(asFragment()).toMatchSnapshot();
+	});
 });

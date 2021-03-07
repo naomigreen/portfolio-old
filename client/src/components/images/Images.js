@@ -4,23 +4,14 @@ import styled from 'styled-components';
 
 export function Image({ src, width, radius, maxWidth, opacity, padding }) {
 	return (
-		<Img
-			src={src}
-			width={width}
-			maxWidth={maxWidth}
-			radius={radius}
-			opacity={opacity}
-			padding={padding}
-			alt=''
-			data-testid='img-test-id'
-		/>
+		<Img src={src} width={width} maxWidth={maxWidth} radius={radius} opacity={opacity} padding={padding} alt='' />
 	);
 }
 
 export function LinkImage({ src, width, maxWidth, link }) {
 	return (
 		<a href={link}>
-			<Link src={src} width={width} maxWidth={maxWidth} alt='' data-testid='img-link-test-id' />
+			<Link src={src} width={width} maxWidth={maxWidth} alt='' />
 		</a>
 	);
 }
@@ -28,7 +19,7 @@ export function LinkImage({ src, width, maxWidth, link }) {
 export function LinkContact({ src, link }) {
 	return (
 		<a href={link}>
-			<ContactLink src={src} link={link} alt='' data-testid='contact-img-link-test-id' />
+			<ContactLink src={src} link={link} alt='' />
 		</a>
 	);
 }
