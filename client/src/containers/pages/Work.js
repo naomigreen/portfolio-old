@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { Image, LinkImage } from '../../components/Images/Images';
-import { sky, rolls, mon, clear, times, mars, hackney } from '../../components/Text/Text';
+import { sky, rolls, mon, clear, times, mars, hackney } from '../../components/text/Text';
 import desk from '../../assets/images/clear-desk.jpg';
 import skyLogo from '../../assets/images/sky.png';
 import monLogo from '../../assets/images/mon-logo.png';
@@ -12,7 +12,7 @@ import timesLogo from '../../assets/images/times.logo.white.png';
 import marsLogo from '../../assets/images/mars-logo.png';
 import hackneyLogo from '../../assets/images/hackney-logo.png';
 
-export default function Work() {
+const Work = () => {
 	return (
 		<Intro>
 			<Image src={desk} width='700px' maxWidth='95%' radius='5px' padding='30px 0' />
@@ -64,3 +64,4 @@ const Intro = styled.div`
 	width: 700px;
 	max-width: 95%;
 `;
+export default Work;

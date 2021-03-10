@@ -8,6 +8,4 @@ describe('Home component', () => {
   it('should render Home component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
-
-
 });

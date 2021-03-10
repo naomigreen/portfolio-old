@@ -2,9 +2,9 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { Image } from '../../components/Images/Images';
-import { home } from '../../components/Text/Text';
+import { home } from '../../components/text/Text';
 
-export default function Home() {
+const Home = () => {
 	return (
 		<Intro>
 			<Image
@@ -27,3 +27,5 @@ const Text = styled(ReactMarkdown)`
   display: block;
 `;
 const Intro = styled.div`margin: 0 auto;`;
+
+export default Home;

@@ -2,12 +2,12 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { DataContext, useFetch } from '../../components/utils/hooks';
-import BubbleChart from '../../components/Charts/Bubble/Bubble';
-import BarChart from '../../components/Charts/Bar/Bar';
-import { demo } from '../../components/Text/Text';
+import BubbleChart from '../../components/charts/Bubble/Bubble';
+import BarChart from '../../components/charts/Bar/Bar';
+import { demo } from '../../components/text/Text';
 import loading from '../../assets/images/loading.svg';
 
-export default function Demo() {
+const Demo = () => {
 	const gdpData = useFetch('/api/data/gdp', []);
 	const houseData = useFetch('/api/data/houses', []);
 
@@ -47,3 +47,5 @@ const Loading = styled.img`
 	display: block;
 	width: 60px;
 `;
+
+export default Demo;

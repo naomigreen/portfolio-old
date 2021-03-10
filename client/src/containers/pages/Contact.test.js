@@ -8,5 +8,4 @@ describe('Contact component', () => {
 	it('should render Contact component', () => {
 		expect(asFragment()).toMatchSnapshot();
 	});
-
 });
