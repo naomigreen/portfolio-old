@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Footer() {
+const Footer = () => {
 	return (
 		<Wrapper>
 			<p>&copy; Codes Green Ltd </p>
 		</Wrapper>
 	);
 }
+
+export default Footer;
 
 const Wrapper = styled.footer`
 	width: 100%;
