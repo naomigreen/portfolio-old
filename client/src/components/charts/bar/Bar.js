@@ -143,8 +143,6 @@ const Bar = () => {
 	);
 }
 
-export default Bar;
-
 const BarChart = styled.div`
 	.bar-svg {
 		margin: 0 auto;
@@ -183,3 +181,5 @@ const BarChart = styled.div`
 		}
 	}
 `;
+
+export default Bar;

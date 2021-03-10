@@ -9,8 +9,6 @@ const Footer = () => {
 	);
 }
 
-export default Footer;
-
 const Wrapper = styled.footer`
 	width: 100%;
 	z-index: 3;
@@ -19,3 +17,5 @@ const Wrapper = styled.footer`
 	margin-top: 70px;
 	padding-bottom: 40px;
 `;
+
+export default Footer;

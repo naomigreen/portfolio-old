@@ -27,7 +27,6 @@ const Form = ({ register, onSubmit, sending }) => (
     </Links>
   </>
 );
-export default Form;
 
 const Input = styled.input`
   width: calc(100% - 22px);
@@ -83,3 +82,5 @@ const Links = styled.div`
   display: inline-block;
   float: right;
 `;
+
+export default Form;

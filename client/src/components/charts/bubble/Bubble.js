@@ -212,8 +212,6 @@ const Bubble = () => {
 	);
 }
 
-export default Bubble;
-
 const BubbleChart = styled.div`
 	margin: 50px auto;
 
@@ -268,3 +266,5 @@ const BubbleChart = styled.div`
 		}
 	}
 `;
+
+export default Bubble;

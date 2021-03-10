@@ -2,8 +2,8 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { DataContext, useFetch } from '../../components/utils/hooks';
-import BubbleChart from '../../components/charts/Bubble/Bubble';
-import BarChart from '../../components/charts/Bar/Bar';
+import BubbleChart from '../../components/charts/bubble/Bubble';
+import BarChart from '../../components/charts/bar/Bar';
 import { demo } from '../../components/text/Text';
 import loading from '../../assets/images/loading.svg';
 
