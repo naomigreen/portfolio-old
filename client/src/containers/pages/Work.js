@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
-import { Image, LinkImage } from '../../components/Images/Images';
+import { Image, LinkImage } from '../../components/images/Images';
 import { sky, rolls, mon, clear, times, mars, hackney } from '../../components/text/Text';
 import desk from '../../assets/images/clear-desk.jpg';
 import skyLogo from '../../assets/images/sky.png';
@@ -12,34 +12,32 @@ import timesLogo from '../../assets/images/times.logo.white.png';
 import marsLogo from '../../assets/images/mars-logo.png';
 import hackneyLogo from '../../assets/images/hackney-logo.png';
 
-const Work = () => {
-	return (
-		<Intro>
-			<Image src={desk} width='700px' maxWidth='95%' radius='5px' padding='30px 0' />
+const Work = () => (
+	<Intro>
+		<Image src={desk} width='700px' maxWidth='95%' radius='5px' padding='30px 0' />
 
-			<LinkImage src={hackneyLogo} width='250px' maxWidth='50%' link='https://hackney.gov.uk/' />
-			<Text source={hackney} escapeHtml={false} />
+		<LinkImage src={hackneyLogo} width='250px' maxWidth='50%' link='https://hackney.gov.uk/' />
+		<Text source={hackney} escapeHtml={false} />
 
-			<LinkImage src={marsLogo} width='250px' maxWidth='50%' link='https://www.mars.com/' />
-			<Text source={mars} escapeHtml={false} />
+		<LinkImage src={marsLogo} width='250px' maxWidth='50%' link='https://www.mars.com/' />
+		<Text source={mars} escapeHtml={false} />
 
-			<LinkImage src={skyLogo} width='200px' maxWidth='40%' link='https://www.skygroup.sky/our-company' />
-			<Text source={sky} escapeHtml={false} />
+		<LinkImage src={skyLogo} width='200px' maxWidth='40%' link='https://www.skygroup.sky/our-company' />
+		<Text source={sky} escapeHtml={false} />
 
-			<LinkImage src={rollsLogo} width='250px' maxWidth='50%' link='https://www.rolls-royce.com/about.aspx' />
-			<Text source={rolls} escapeHtml={false} />
+		<LinkImage src={rollsLogo} width='250px' maxWidth='50%' link='https://www.rolls-royce.com/about.aspx' />
+		<Text source={rolls} escapeHtml={false} />
 
-			<LinkImage src={clearLogo} width='250px' maxWidth='50%' link='https://www.clearmatics.com/about/' />
-			<Text source={clear} escapeHtml={false} />
+		<LinkImage src={clearLogo} width='250px' maxWidth='50%' link='https://www.clearmatics.com/about/' />
+		<Text source={clear} escapeHtml={false} />
 
-			<LinkImage src={monLogo} width='250px' maxWidth='50%' link='https://monetate.com/about/' />
-			<Text source={mon} escapeHtml={false} />
+		<LinkImage src={monLogo} width='250px' maxWidth='50%' link='https://monetate.com/about/' />
+		<Text source={mon} escapeHtml={false} />
 
-			<LinkImage src={timesLogo} width='250px' maxWidth='50%' link='https://www.news.co.uk/' />
-			<Text source={times} escapeHtml={false} noBorder={true} />
-		</Intro>
-	);
-}
+		<LinkImage src={timesLogo} width='250px' maxWidth='50%' link='https://www.news.co.uk/' />
+		<Text source={times} escapeHtml={false} noBorder={true} />
+	</Intro>
+);
 
 const Text = styled(ReactMarkdown)`
   padding: 20px;
@@ -64,4 +62,5 @@ const Intro = styled.div`
 	width: 700px;
 	max-width: 95%;
 `;
+
 export default Work;

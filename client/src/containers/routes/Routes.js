@@ -37,7 +37,6 @@ const Routes = () => (
 	</Main>
 );
 
-export default Routes;
 
 const Main = styled.div`
 	position: relative;
@@ -99,3 +98,5 @@ const Company = styled.h2`
 		font-size: 26px;
 	}
 `;
+
+export default Routes;

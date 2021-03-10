@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { Image, LinkContact } from "../Images/Images";
+import { Image, LinkContact } from "../images/Images";
 import tick from "../../assets/images/success.png";
 import github from "../../assets/images/github.png";
 import code from "../../assets/images/code.png";
