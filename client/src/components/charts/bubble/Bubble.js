@@ -4,7 +4,7 @@ import useWindowSize from '@rehooks/window-size';
 import * as d3 from 'd3';
 import { DataContext } from '../../utils/hooks';
 
-export default function Bubble() {
+const Bubble = () => {
 	const bubbleData = useContext(DataContext);
 
 	const windowSize = useWindowSize().innerWidth;
@@ -207,10 +207,12 @@ export default function Bubble() {
 	);
 	return (
 		<BubbleChart>
-			<div id='bubble' width={elementWidth.toFixed().toString()} height='550' />
+			<div id='bubble' data-testid='bubble-chart' width={elementWidth.toFixed().toString()} height='550' />
 		</BubbleChart>
 	);
 }
+
+export default Bubble;
 
 const BubbleChart = styled.div`
 	margin: 50px auto;

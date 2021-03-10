@@ -1,0 +1,632 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Work component should render Work component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxhUy hvoiWZ"
+  >
+    <img
+      alt=""
+      class="sc-AxjAm iOFbTB"
+      radius="5px"
+      src="clear-desk.jpg"
+      width="700px"
+    />
+    <a
+      href="https://hackney.gov.uk/"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ dmEJqG"
+        src="hackney-logo.png"
+        width="250px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fxYost"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          React Hooks
+        </li>
+        <li>
+          Next.js
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          Sass
+        </li>
+        <li>
+          JSX
+        </li>
+        <li>
+          JSON
+        </li>
+        <li>
+          Jest
+        </li>
+        <li>
+          React hook form
+        </li>
+        <li>
+          React testing library
+        </li>
+        <li>
+          Storybook
+        </li>
+        <li>
+          Cypress
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Creating and styling React components
+        </li>
+        <li>
+          Code reviews
+        </li>
+        <li>
+          Unit and functional tests
+        </li>
+        <li>
+          Pair programming
+        </li>
+        <li>
+          Error handling
+        </li>
+        <li>
+          Junior developer training
+        </li>
+      </ul>
+      <p>
+        This application was created as an interim solution for social care after Hackney council was hacked in October.
+      </p>
+      <p>
+        We started by displaying the retrieved data, creating a form builder to generate all forms used by practitioners, adding the functional to create a new person and enabling the allocations of workers
+      </p>
+    </div>
+    <a
+      href="https://www.mars.com/"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ dmEJqG"
+        src="mars-logo.png"
+        width="250px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fxYost"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          React Hooks
+        </li>
+        <li>
+          Redux
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          React testing library
+        </li>
+        <li>
+          Sass
+        </li>
+        <li>
+          JSX
+        </li>
+        <li>
+          JSON
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Designing and creating components
+        </li>
+        <li>
+          Code reviews
+        </li>
+        <li>
+          Unit and functional tests
+        </li>
+        <li>
+          Error handling
+        </li>
+        <li>
+          Data visualisation charts with D3
+        </li>
+      </ul>
+      <p>
+        This was an internal analytical web application to demonstrate process logs to shareholders.
+      </p>
+    </div>
+    <a
+      href="https://www.skygroup.sky/our-company"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ javVPq"
+        src="sky.png"
+        width="200px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fxYost"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          React Hooks
+        </li>
+        <li>
+          Redux
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          Jest
+        </li>
+        <li>
+          Enzyme
+        </li>
+        <li>
+          Sass
+        </li>
+        <li>
+          Emotions
+        </li>
+        <li>
+          JSX
+        </li>
+        <li>
+          JSON
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Code reviews
+        </li>
+        <li>
+          Unit and functional tests
+        </li>
+        <li>
+          Regression testing
+        </li>
+        <li>
+          Pairing with junior developers
+        </li>
+        <li>
+          Testing across Xfinity devices, Samsung and LG TVs
+        </li>
+        <li>
+          Error handling
+        </li>
+        <li>
+          Component redesign
+        </li>
+      </ul>
+      <p>
+        This project was a full redesign of NowTV for NBCU's Peacock video streaming application. 
+        <br />
+        
+This was my first time working on a video streaming application for TV. It was very different to 
+coding on web but a great experience working with different environments such as Xfinity, Samsung 
+and LG TVs.
+      </p>
+    </div>
+    <a
+      href="https://www.rolls-royce.com/about.aspx"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ dmEJqG"
+        src="rolls.png"
+        width="250px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fxYost"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          Redux
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          Jest
+        </li>
+        <li>
+          Enzyme
+        </li>
+        <li>
+          Sass
+        </li>
+        <li>
+          JSX
+        </li>
+        <li>
+          JSON
+        </li>
+        <li>
+          CSS3
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Application prototype with test data
+        </li>
+        <li>
+          Unit and functional tests
+        </li>
+        <li>
+          OAuth 2.0 login authentication with Azure
+        </li>
+        <li>
+          Custom routing for different users
+        </li>
+        <li>
+          Mobile menu
+        </li>
+        <li>
+          D3 charts
+        </li>
+        <li>
+          Table components 
+        </li>
+        <li>
+          Feature demonstrations
+        </li>
+      </ul>
+      <p>
+        This was a very rewarding project to create a user interface that displayed engine component 
+information throughout the progress of development. The project consist of a great deal of data 
+visualisation using AI data. I used D3 and React Table to create charts, graphs and interactive 
+tables.
+      </p>
+    </div>
+    <a
+      href="https://www.clearmatics.com/about/"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ dmEJqG"
+        src="clearmatics-logo.png"
+        width="250px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fxYost"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          Redux
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          Jest
+        </li>
+        <li>
+          HTML5
+        </li>
+        <li>
+          Enzyme
+        </li>
+        <li>
+          Sass
+        </li>
+        <li>
+          Drizzle
+        </li>
+        <li>
+          JSX
+        </li>
+        <li>
+          JSON
+        </li>
+        <li>
+          CSS3
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Nested routing by accounts and currency
+        </li>
+        <li>
+          Creating test data to populate components
+        </li>
+        <li>
+          Live REST API implementation and testing
+        </li>
+        <li>
+          Error handling
+        </li>
+        <li>
+          Unit tests and documentation
+        </li>
+        <li>
+          Browser testing
+        </li>
+        <li>
+          Table components
+        </li>
+        <li>
+          UI design
+        </li>
+        <li>
+          TestNet configuration
+        </li>
+        <li>
+          Dapps interface components
+        </li>
+        <li>
+          MetaMask testing
+        </li>
+        <li>
+          Solidity Ethereum smart contract
+        </li>
+        <li>
+          Feature demonstrations
+        </li>
+      </ul>
+      <p>
+        As the sole Frontend React developer, I was given creative control to architect, design and 
+implement the USC user interface. I also had the pleasure of creating two decentralised applications
+for network permissioning. This was amazing role that enabled me to problem solve rapidly and 
+delivery with very short deadlines.
+      </p>
+    </div>
+    <a
+      href="https://monetate.com/about/"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ dmEJqG"
+        src="mon-logo.png"
+        width="250px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fxYost"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          Redux
+        </li>
+        <li>
+          Angular
+        </li>
+        <li>
+          Vanilla Javascript ES5/ES6
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          Jest
+        </li>
+        <li>
+          Enzyme
+        </li>
+        <li>
+          JQuery
+        </li>
+        <li>
+          HTML5
+        </li>
+        <li>
+          JSON
+        </li>
+        <li>
+          CSS3
+        </li>
+        <li>
+          Ajax
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Application prototype with test data
+        </li>
+        <li>
+          Unit and functional tests
+        </li>
+        <li>
+          OAuth 2.0 login authentication with Azure
+        </li>
+        <li>
+          Custom routing for different users
+        </li>
+        <li>
+          Mobile menu
+        </li>
+        <li>
+          D3 charts
+        </li>
+        <li>
+          Table components 
+        </li>
+        <li>
+          Feature demonstrations
+        </li>
+      </ul>
+      <p>
+        This was an exciting role that enabled me to work with a number of different frameworks. I was part 
+of a small team of only three developers working on all UK and European sites, this enabled me to 
+learn how to deliver fast and work well under pressure.
+      </p>
+    </div>
+    <a
+      href="https://www.news.co.uk/"
+    >
+      <img
+        alt=""
+        class="sc-AxirZ dmEJqG"
+        src="times.logo.white.png"
+        width="250px"
+      />
+    </a>
+    <div
+      class="sc-AxhCb fJfudU"
+    >
+      <p>
+        <u>
+          Technology
+        </u>
+         
+      </p>
+      <ul>
+        <li>
+          Vanilla Javascript ES5
+        </li>
+        <li>
+          REST API
+        </li>
+        <li>
+          Jest
+        </li>
+        <li>
+          Enzyme
+        </li>
+        <li>
+          HTML5
+        </li>
+        <li>
+          JSON
+        </li>
+        <li>
+          CSS3
+        </li>
+        <li>
+          Jasmine
+        </li>
+      </ul>
+      <p>
+        <u>
+          Role
+        </u>
+      </p>
+      <ul>
+        <li>
+          Creating new components
+        </li>
+        <li>
+          Unit and functional tests
+        </li>
+        <li>
+          Testing across all browsers
+        </li>
+        <li>
+          Regression testing
+        </li>
+        <li>
+          Pair programming
+        </li>
+        <li>
+          System documentation
+        </li>
+        <li>
+          Feature demonstrations
+        </li>
+      </ul>
+      <p>
+        I worked on Template Designer, a vanilla Javascript web application with a similar look and feel to 
+Photoshop. The application is used by The Times and Sunday Times editorial to create article 
+templates. This was a great role as it gave me a fundamental understanding of vanilla JavaScript 
+without frameworks.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

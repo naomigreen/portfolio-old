@@ -4,9 +4,55 @@ I have a Computer Science background and specialise in React, Vanilla and Node J
 I enjoy working on complex projects that test my skills and teach me new approaches to software 
 development.`;
 
+export const hackney = `
+<u>Technology</u> 
+* React
+* React Hooks
+* Next.js
+* REST API
+* Sass
+* JSX
+* JSON
+* Jest
+* React hook form
+* React testing library
+* Storybook
+* Cypress
+
+<u>Role</u>
+* Creating and styling React components
+* Code reviews
+* Unit and functional tests
+* Pair programming
+* Error handling
+* Junior developer training
+
+This application was created as an interim solution for social care after Hackney council was hacked in October.
+
+We started by displaying the retrieved data, creating a form builder to generate all forms used by practitioners, adding the functional to create a new person and enabling the allocations of workers`;
+
+export const mars = `
+<u>Technology</u> 
+* React
+* React Hooks
+* Redux
+* REST API
+* React testing library
+* Sass
+* JSX
+* JSON
+
+<u>Role</u>
+* Designing and creating components
+* Code reviews
+* Unit and functional tests
+* Error handling
+* Data visualisation charts with D3
+
+This was an internal analytical web application to demonstrate process logs to shareholders.`;
+
 export const sky = `
 <u>Technology</u> 
-
 * React
 * React Hooks
 * Redux
@@ -19,7 +65,6 @@ export const sky = `
 * JSON
 
 <u>Role</u>
-
 * Code reviews
 * Unit and functional tests
 * Regression testing
@@ -35,7 +80,6 @@ and LG TVs.`;
 
 export const rolls = `
 <u>Technology</u> 
-
 * React
 * Redux
 * REST API
@@ -47,7 +91,6 @@ export const rolls = `
 * CSS3
 
 <u>Role</u>
-
 * Application prototype with test data
 * Unit and functional tests
 * OAuth 2.0 login authentication with Azure
@@ -64,7 +107,6 @@ tables.`;
 
 export const clear = `
 <u>Technology</u> 
-
 * React
 * Redux
 * REST API
@@ -78,7 +120,6 @@ export const clear = `
 * CSS3
 
 <u>Role</u>
-
 * Nested routing by accounts and currency
 * Creating test data to populate components
 * Live REST API implementation and testing
@@ -100,7 +141,6 @@ delivery with very short deadlines.`;
 
 export const mon = `
 <u>Technology</u> 
-
 * React
 * Redux
 * Angular
@@ -130,7 +170,6 @@ learn how to deliver fast and work well under pressure.`;
 
 export const times = `
 <u>Technology</u> 
-
 * Vanilla Javascript ES5
 * REST API
 * Jest
@@ -141,7 +180,6 @@ export const times = `
 * Jasmine
 
 <u>Role</u>
-
 * Creating new components
 * Unit and functional tests
 * Testing across all browsers
@@ -157,6 +195,7 @@ without frameworks.`;
 
 export const demo = `Unfortunately most of the projects I work on have non-disclosure agreements, 
 therefore I've decided to demonstrate my passion for data visualisation using D3.`;
+
 export const barInfo = `I was inspired to create this race chart after seeing a version just showing
  the cases in an article on the [BBC](https://www.bbc.co.uk/news/world-51235105)`;
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
-import { Image } from '../../components/images/Images';
-import { home } from '../../components/text/Text';
+import { Image } from '../../components/Images/Images';
+import { home } from '../../components/Text/Text';
 
 export default function Home() {
 	return (

@@ -1,19 +1,28 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
-import { Image, LinkImage } from '../../components/images/Images';
-import { sky, rolls, mon, clear, times } from '../../components/text/Text';
+import { Image, LinkImage } from '../../components/Images/Images';
+import { sky, rolls, mon, clear, times, mars, hackney } from '../../components/Text/Text';
 import desk from '../../assets/images/clear-desk.jpg';
 import skyLogo from '../../assets/images/sky.png';
 import monLogo from '../../assets/images/mon-logo.png';
 import rollsLogo from '../../assets/images/rolls.png';
 import clearLogo from '../../assets/images/clearmatics-logo.png';
 import timesLogo from '../../assets/images/times.logo.white.png';
+import marsLogo from '../../assets/images/mars-logo.png';
+import hackneyLogo from '../../assets/images/hackney-logo.png';
 
 export default function Work() {
 	return (
 		<Intro>
 			<Image src={desk} width='700px' maxWidth='95%' radius='5px' padding='30px 0' />
+
+			<LinkImage src={hackneyLogo} width='250px' maxWidth='50%' link='https://hackney.gov.uk/' />
+			<Text source={hackney} escapeHtml={false} />
+
+			<LinkImage src={marsLogo} width='250px' maxWidth='50%' link='https://www.mars.com/' />
+			<Text source={mars} escapeHtml={false} />
+
 			<LinkImage src={skyLogo} width='200px' maxWidth='40%' link='https://www.skygroup.sky/our-company' />
 			<Text source={sky} escapeHtml={false} />
 

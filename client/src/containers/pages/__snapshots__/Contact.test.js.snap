@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component should render Contact component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-Axmtr jEDxkM"
+  >
+    <img
+      alt=""
+      class="sc-AxjAm bOyKAc"
+      opacity="0"
+      src="success.png"
+      width="40px"
+    />
+    <form
+      data-testid="form"
+    >
+      <input
+        class="sc-AxhCb cHpGXh"
+        name="name"
+        placeholder="Name"
+        type="text"
+      />
+      <input
+        class="sc-AxhCb cHpGXh"
+        name="email"
+        placeholder="Email"
+        type="email"
+      />
+      <textarea
+        class="sc-AxhUy gYTJKi"
+        name="message"
+        placeholder="Message"
+        type="text"
+      />
+      <button
+        class="sc-AxgMl lnDpCC"
+        data-testid="submit"
+        type="submit"
+      >
+        Send message
+      </button>
+    </form>
+    <div
+      class="sc-AxheI jBPegG"
+    >
+      <a
+        href="https://www.linkedin.com/in/naomi-prescod-green-3299868a/"
+      >
+        <img
+          alt=""
+          class="sc-AxiKw dgiEoI"
+          src="linkedin.png"
+        />
+      </a>
+      <a
+        href="https://github.com/naomigreen"
+      >
+        <img
+          alt=""
+          class="sc-AxiKw dgiEoI"
+          src="github.png"
+        />
+      </a>
+      <a
+        href="https://github.com/naomigreen/portfolio"
+      >
+        <img
+          alt=""
+          class="sc-AxiKw dgiEoI"
+          src="code.png"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

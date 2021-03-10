@@ -1,10 +1,12 @@
-import React from "react";
-import { render, cleanup } from '@testing-library/react';
+import React from 'react';
+import { render } from '@testing-library/react';
 import Work from './Work';
 
-afterEach(cleanup);
 
-it("should render Work component", () => {
-  const { container } = render(<Work />)
-  expect(container).toBeInTheDocument();
+describe('Work component', () => {
+  const { asFragment } = render(<Work />);
+
+  it('should render Work component', () => {
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

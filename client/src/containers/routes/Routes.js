@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 import Contact from '../pages/Contact';
 import Demo from '../pages/Demo';
 import Fonts from '../../assets/fonts/fonts';
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import Home from '../pages/Home';
 import Work from '../pages/Work';
 
@@ -16,7 +16,7 @@ export default function Routes() {
 			<Company>Codes Green Ltd</Company>
 			<Router>
 				<Nav>
-					<Link activeClassName='active-link' to='/home'>
+					<Link activeClassName='active-link' exact to='/'>
 						Home
 					</Link>
 					<Link activeClassName='active-link' to='/work'>
@@ -29,11 +29,10 @@ export default function Routes() {
 						Contact
 					</Link>
 				</Nav>
-				<Redirect exact from='/' to='/home' />
-				<Route path='/home' component={Home} />
 				<Route path='/work' component={Work} />
 				<Route path='/demo' component={Demo} />
 				<Route path='/contact' component={Contact} />
+				<Route exact path='/' component={Home} />
 			</Router>
 			<Footer />
 		</Main>

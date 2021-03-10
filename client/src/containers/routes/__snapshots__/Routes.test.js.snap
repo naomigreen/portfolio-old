@@ -1,46 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Routes component 1`] = `
+exports[`Routes component should render Routes component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-fzqBZW BQyur"
+    class="sc-fzqNJr kCErZm"
   >
     <h2
-      class="sc-fzoLag fiMHy"
+      class="sc-fzoXzr duSvhA"
     >
       Codes Green Ltd
     </h2>
     <div
-      class="sc-fzqNJr dbelry"
+      class="sc-fzoyAV kFPzDM"
     >
       <a
         aria-current="page"
-        class="sc-fzoyAV dMQIdv active-link"
-        href="/home"
+        class="sc-fzoLag fYSjLH active-link"
+        href="/"
       >
         Home
       </a>
       <a
-        class="sc-fzoyAV dMQIdv"
+        class="sc-fzoLag fYSjLH"
         href="/work"
       >
         Work
       </a>
       <a
-        class="sc-fzoyAV dMQIdv"
+        class="sc-fzoLag fYSjLH"
         href="/demo"
       >
         Demo
       </a>
       <a
-        class="sc-fzoyAV dMQIdv"
+        class="sc-fzoLag fYSjLH"
         href="/contact"
       >
         Contact
       </a>
     </div>
     <div
-      class="sc-fznKkj bJZima"
+      class="sc-fznZeY eSWYwe"
     >
       <img
         alt=""
@@ -50,7 +50,7 @@ exports[`should render Routes component 1`] = `
         width="150px"
       />
       <div
-        class="sc-fznyAO gOGuAv"
+        class="sc-fznKkj fTmqWG"
       >
         <p>
           I’m Naomi Prescod-Green, a Full Stack JavaScript Contractor and founder of Codes Green Ltd. 
@@ -65,7 +65,7 @@ development.
       </div>
     </div>
     <footer
-      class="sc-fzplWN hYgkwo"
+      class="sc-fznyAO YbCdE"
     >
       <p>
         © Codes Green Ltd 

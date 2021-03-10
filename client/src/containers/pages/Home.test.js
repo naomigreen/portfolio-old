@@ -1,10 +1,13 @@
-import React from "react";
-import { render, cleanup } from '@testing-library/react';
+import React from 'react';
+import { render } from '@testing-library/react';
 import Home from './Home';
 
-afterEach(cleanup);
+describe('Home component', () => {
+  const { asFragment } = render(<Home />);
 
-it("should render Home component", () => {
-  const { container } = render(<Home />)
-  expect(container).toBeInTheDocument();
+  it('should render Home component', () => {
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+
 });

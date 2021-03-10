@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import * as d3 from 'd3';
 import { DataContext } from '../../utils/hooks';
 
-export default function Bar() {
+const Bar = () => {
 
 	const barData = useContext(DataContext);
 	const windowSize = useWindowSize().innerWidth;
@@ -138,10 +138,12 @@ export default function Bar() {
 	);
 	return (
 		<BarChart>
-			<div id='bar' width={elementWidth.toFixed().toString()} height='550' />
+			<div id='bar' data-testid='bar-chart' width={elementWidth.toFixed().toString()} height='550' />
 		</BarChart>
 	);
 }
+
+export default Bar;
 
 const BarChart = styled.div`
 	.bar-svg {

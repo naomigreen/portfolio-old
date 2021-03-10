@@ -1,90 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from 'styled-components';
-import { Image, LinkContact } from "../images/Images";
+import { Image, LinkContact } from "../Images/Images";
 import tick from "../../assets/images/success.png";
 import github from "../../assets/images/github.png";
 import code from "../../assets/images/code.png";
 import linkedin from "../../assets/images/linkedin.png";
 
-export default function Form() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [formSent, setFormSent] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    sendMessage(
-      name,
-      email,
-      message,
-      process.env.REACT_APP_EMAILJS_TEMPLATEID,
-      process.env.REACT_APP_EMAILJS_SERVICEID,
-      process.env.REACT_APP_EMAILJS_USERID,
-      process.env.REACT_APP_EMAILJS_RECEIVER
-    );
-    setFormSent(true);
-    setName('');
-    setEmail('');
-    setMessage('');
-  };
-
-  function sendMessage(senderName, senderEmail, senderMessage, templateId, serviceId, userID) {
-    window.emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          from_email: senderEmail,
-          from_name: senderName,
-          message_html: senderMessage
-        },
-        userID
-      )
-      .then((res) => {
-        setFormSent(false);
-      })
-      .catch((err) => console.error('Failed to send message. Error: ', err));
-  }
-  return (
-
-    <form onSubmit={handleSubmit}>
-      <Image src={tick} width='40px' opacity={formSent ? 0.6 : 0} padding='0 0 10px' display='inline' />
-      <Input
-        placeholder='Name'
-        onChange={(e) => setName(e.target.value)}
-        value={name}
-        type='text'
-        required
-      />
-      <Input
-        placeholder='Email'
-        onChange={(e) => setEmail(e.target.value)}
-        value={email}
-        type='email'
-        required
-      />
-      <TextArea
-        placeholder='Message'
-        onChange={(e) => setMessage(e.target.value)}
-        value={message}
-        required
-      />
-      <Button type='submit'>
+const Form = ({ register, onSubmit, sending }) => (
+  <>
+    <Image src={tick} width='40px' opacity={sending ? 0.6 : 0} padding='0 0 10px' display='inline' />
+    <form data-testid='form' onSubmit={onSubmit}>
+      <Input placeholder='Name' name='name' type='text' ref={register({ required: true })} />
+      <Input placeholder='Email' name='email' type='email' ref={register({ required: true })} />
+      <TextArea placeholder='Message' name='message' type='text' ref={register({ required: true })} />
+      <Button data-testid="submit" type='submit'>
         Send message
 			</Button>
-      <Links>
-        <LinkContact
-          src={linkedin} link="https://www.linkedin.com/in/naomi-prescod-green-3299868a/" />
-        <LinkContact
-          src={github} link="https://github.com/naomigreen" />
-        <LinkContact
-          src={code} link="https://github.com/naomigreen/portfolio" />
-      </Links>
     </form>
-  );
-}
+    <Links>
+      <LinkContact
+        src={linkedin} link="https://www.linkedin.com/in/naomi-prescod-green-3299868a/" />
+      <LinkContact
+        src={github} link="https://github.com/naomigreen" />
+      <LinkContact
+        src={code} link="https://github.com/naomigreen/portfolio" />
+    </Links>
+  </>
+);
+export default Form;
 
 const Input = styled.input`
   width: calc(100% - 22px);

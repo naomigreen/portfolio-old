@@ -1,10 +1,12 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Contact from './Contact';
 
-afterEach(cleanup);
+describe('Contact component', () => {
+	const { asFragment } = render(<Contact />);
 
-it('should render Contact component', () => {
-	const { container } = render(<Contact />);
-	expect(container).toBeInTheDocument();
+	it('should render Contact component', () => {
+		expect(asFragment()).toMatchSnapshot();
+	});
+
 });

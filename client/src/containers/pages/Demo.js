@@ -2,18 +2,18 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { DataContext, useFetch } from '../../components/utils/hooks';
-import BubbleChart from '../../components/charts/bubble/Bubble';
-import BarChart from '../../components/charts/bar/Bar';
-import { demo } from '../../components/text/Text';
+import BubbleChart from '../../components/Charts/Bubble/Bubble';
+import BarChart from '../../components/Charts/Bar/Bar';
+import { demo } from '../../components/Text/Text';
+import loading from '../../assets/images/loading.svg';
 
 export default function Demo() {
 	const gdpData = useFetch('/api/data/gdp', []);
 	const houseData = useFetch('/api/data/houses', []);
 
 	if (!houseData.length || !gdpData.length) {
-		return null;
+		return <Loading src={loading} id='loading-icon' />;
 	}
-
 	return (
 		<DataContext.Provider value={{ gdp: gdpData, houses: houseData }}>
 			<Charts>
@@ -39,4 +39,11 @@ const Charts = styled.div`
 	a:visited {
 		color: #359987;
 	}
+`;
+
+const Loading = styled.img`
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 60px;
 `;
