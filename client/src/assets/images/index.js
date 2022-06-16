@@ -1,0 +1,11 @@
+export { default as desk } from './clear-desk.jpg';
+export { default as skyLogo } from './sky.png';
+export { default as monLogo } from './mon-logo.png';
+export { default as rollsLogo } from './rolls.png';
+export { default as clearLogo } from './clearmatics-logo.png';
+export { default as timesLogo } from './times.logo.white.png';
+export { default as marsLogo } from './mars-logo.png';
+export { default as hackneyLogo } from './hackney-logo.png';
+export { default as daznLogo } from './dazn1.png';
+export { default as bbcLogo } from './bbc.png';
+export { default as intrepidLogo } from './intrepid.png';

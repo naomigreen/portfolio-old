@@ -1,6 +1,12 @@
 body {
-  font-family: Helvetica, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Helvetica, Menlo, Monaco, Consolas, 'Courier New', monospace;
   margin: 0;
   padding: 0;
   background: #000;
+}
+
+a:-webkit-any-link {
+  color: #2ab0b4;
+  cursor: pointer;
+  text-decoration: none;
 }

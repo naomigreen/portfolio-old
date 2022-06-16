@@ -1,7 +1,7 @@
 import { useState, useEffect, createContext } from 'react';
 import axios from 'axios';
 
-export const DataContext = createContext();
+export const DataContext = createContext(null);
 
 export const useFetch = (url, initialValue) => {
 	const [ data, setData ] = useState(initialValue);
