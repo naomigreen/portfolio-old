@@ -10,59 +10,58 @@ import Home from '../pages/Home';
 import Work from '../pages/Work';
 
 const Routes = () => (
-	<Main>
-		<Fonts />
-		<Company>Codes Green Ltd</Company>
-		<Router>
-			<Nav>
-				<Link activeClassName='active-link' exact to='/'>
-					Home
-					</Link>
-				<Link activeClassName='active-link' to='/work'>
-					Work
-					</Link>
-				<Link activeClassName='active-link' to='/demo'>
-					Demo
-					</Link>
-				<Link activeClassName='active-link' to='/contact'>
-					Contact
-					</Link>
-			</Nav>
-			<Route path='/work' component={Work} />
-			<Route path='/demo' component={Demo} />
-			<Route path='/contact' component={Contact} />
-			<Route exact path='/' component={Home} />
-		</Router>
-		<Footer />
-	</Main>
+  <Main>
+    <Fonts />
+    <Company>Codes Green Ltd</Company>
+    <Router>
+      <Nav>
+        <Link activeClassName='active-link' exact to='/'>
+          Home
+        </Link>
+        <Link activeClassName='active-link' to='/work'>
+          Work
+        </Link>
+        <Link activeClassName='active-link' to='/demo'>
+          Demo
+        </Link>
+        <Link activeClassName='active-link' to='/contact'>
+          Contact
+        </Link>
+      </Nav>
+      <Route path='/work' component={Work} />
+      <Route path='/demo' component={Demo} />
+      <Route path='/contact' component={Contact} />
+      <Route exact path='/' component={Home} />
+    </Router>
+    <Footer />
+  </Main>
 );
 
-
 const Main = styled.div`
-	position: relative;
-	margin: 0 auto;
-	color: #fff;
-	z-index: 4;
-	background: #08080887;
-	top: 300px;
-	width: 100%;
-	max-width: 900px;
-	min-height: 700px;
-	overflow-x: hidden;
-	padding: 20px 30px;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  z-index: 4;
+  background: #091d2087;
+  top: 300px;
+  width: 100%;
+  max-width: 900px;
+  min-height: 700px;
+  overflow-x: hidden;
+  padding: 20px 30px;
 
-	@media (max-width: 425px) {
-		padding: 20px 7px;
-	}
+  @media (max-width: 425px) {
+    padding: 20px 7px;
+  }
 `;
 const Nav = styled.div`
-	width: 350px;
-	max-width: 95%;
-	margin: 60px auto 30px;
-	position: relative;
-	.active-link {
-		background: #0625258c;
-	}
+  width: 350px;
+  max-width: 95%;
+  margin: 60px auto 30px;
+  position: relative;
+  .active-link {
+    background: #0625258c;
+  }
 `;
 
 const Link = styled(NavLink)`
@@ -80,23 +79,23 @@ const Link = styled(NavLink)`
   text-decoration: none;
   z-index: 3;
   position: relative;
-  :hover{
+  :hover {
     background: #0625258c;
   }
 `;
 
 const Company = styled.h2`
-	margin-top: 40px;
-	font-family: octuple_maxregular, Arial, sans-serif;
-	text-align: center;
-	font-size: 40px;
-	background: -webkit-linear-gradient(#00cecc, #286d0d);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  margin-top: 40px;
+  font-family: octuple_maxregular, Arial, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  background: -webkit-linear-gradient(#00cecc, #286d0d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-	@media (max-width: 425px) {
-		font-size: 26px;
-	}
+  @media (max-width: 425px) {
+    font-size: 26px;
+  }
 `;
 
 export default Routes;

@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
+const enforce = require('express-sslify');
 const app = express();
 const port = process.env.PORT || 5000;
 const houseData = require('./data/houses.json');
@@ -15,6 +16,7 @@ app.get('/api/data/houses', (req, res) => {
 });
 
 if (process.env.NODE_ENV === 'production') {
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
   app.use(express.static(path.join(__dirname, 'client/build')));
   app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
