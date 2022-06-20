@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
-import { Image, LinkContact } from "../images/Images";
-import tick from "../../assets/images/success.png";
-import github from "../../assets/images/github.png";
-import code from "../../assets/images/code.png";
-import linkedin from "../../assets/images/linkedin.png";
+import { Image, LinkContact } from '../images/Images';
+import tick from '../../assets/images/success.png';
+import github from '../../assets/images/github.png';
+import code from '../../assets/images/code.png';
+import linkedin from '../../assets/images/linkedin.png';
 
 const Form = ({ register, onSubmit, sending }) => (
   <>
@@ -13,18 +13,17 @@ const Form = ({ register, onSubmit, sending }) => (
       <Input placeholder='Name' name='name' type='text' ref={register({ required: true })} />
       <Input placeholder='Email' name='email' type='email' ref={register({ required: true })} />
       <TextArea placeholder='Message' name='message' type='text' ref={register({ required: true })} />
-      <Button data-testid="submit" type='submit'>
-        Send message
-			</Button>
+      <div>
+        <Button data-testid='submit' type='submit'>
+          Send message
+        </Button>
+        <Links>
+          <LinkContact src={linkedin} link='https://www.linkedin.com/in/naomi-prescod-green-3299868a/' />
+          <LinkContact src={github} link='https://github.com/naomigreen' />
+          <LinkContact src={code} link='https://github.com/naomigreen/portfolio' />
+        </Links>
+      </div>
     </form>
-    <Links>
-      <LinkContact
-        src={linkedin} link="https://www.linkedin.com/in/naomi-prescod-green-3299868a/" />
-      <LinkContact
-        src={github} link="https://github.com/naomigreen" />
-      <LinkContact
-        src={code} link="https://github.com/naomigreen/portfolio" />
-    </Links>
   </>
 );
 
@@ -36,12 +35,14 @@ const Input = styled.input`
   border-radius: 5px;
   outline: none;
   color: #fff;
-  background:#0000008c;
+  background: #0000008c;
   font-size: 16px;
-  ::placeholder{
+  ::placeholder {
     color: #afa8a8;
   }
-  :-webkit-autofill:focus, :-webkit-autofill:hover, :-webkit-autofill{
+  :-webkit-autofill:focus,
+  :-webkit-autofill:hover,
+  :-webkit-autofill {
     -webkit-text-fill-color: #afa8a8;
     -webkit-box-shadow: 0 0 0px 1000px #000 inset;
   }
@@ -59,7 +60,7 @@ const TextArea = styled.textarea`
   font-size: 16px;
   min-height: 200px;
   font-family: Helvetica, monospace;
-  ::placeholder{
+  ::placeholder {
     color: #afa8a8;
   }
 `;
@@ -70,7 +71,7 @@ const Button = styled.button`
   border: 1px solid #0b2322;
   border-radius: 5px;
   color: #afa8a8;
-  background:#0000008c;
+  background: #0000008c;
   font-size: 14px;
   :hover {
     background: #1848473d;
