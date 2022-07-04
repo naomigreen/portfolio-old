@@ -43,8 +43,8 @@ export const dazn = `
 * Pair programming
 * Error handling
 
-This turned out to be more of a support role, helping to fix any bugs that arose within the devices assigned to me (Xbox, Samsung and Vodafone TV). 
-This was a difficult role as it's not common to have React applications running on these devices, therefore troubleshooting error codes was hard as hardly anyone had ever seen them. That said, I had a great team and learnt a great deal `;
+This was more of a support role, helping to fix any bugs that arose within the devices assigned to me (Xbox, Samsung and Vodafone TV). 
+This was a great experience troubleshooting a react application on these devices.`;
 
 export const intrepid = `
 <u>Technology</u> 

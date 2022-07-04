@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { Image, LinkImage } from '../../components/images/Images';
