@@ -26,7 +26,7 @@ export const bbc = `
 * Code refactoring   
 * Custom Slack bot
 
-This role was maintaining and upgrading the current web core monorepo. The application is a mixture of React and Vanilla JavaScript. We created a new layout component with additional functionality to enable staff to be more creative with page layouts. We also upgraded and refactored a large amount of the codebase. Overall it was a great experience working and maintaining such a large codebase`;
+This role was maintaining, upgrading and creating new components. The application is a mixture of React and Vanilla JavaScript. This was a great experience maintaining such a large codebase`;
 
 export const dazn = `
 <u>Technology</u> 
@@ -69,7 +69,9 @@ export const intrepid = `
 * Creating and updating endpoints (C#)
 * Working with external APIs (creating custom maps and address lookup)
 
-This was a greenfield project for [Little Journey](http://www.littlejourney.health/), a medical application to assist children during medical procedures. The gold was to help children deal with anxiety, encourage and monitor the taking of medication, organise and prepare for appointments. This application consist of two part, a portal used my staff to create and monitor medical trials and a mobile version written in React and precompiled with Cordova.`;
+This was a greenfield project for [Little Journey](http://www.littlejourney.health/), a medical application to assist children during medical procedures. 
+The goal was to help children deal with anxiety, encourage and monitor the taking of medication, organise and prepare for appointments and procedures. 
+This application consist of two parts, a portal used my staff to create and monitor medical trials and a mobile version also written in React and precompiled with Cordova.`;
 
 export const hackney = `
 <u>Technology</u> 
